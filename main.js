@@ -48,8 +48,6 @@ btns.forEach(item => {
                     exc2.innerHTML = `1 ${valuteID2} = ` + data.rates[valuteID] + ` ${valuteID}`
                 })
         }
-
-        console.log(valuteID)
     })
 })
 btns2.forEach(item => {
