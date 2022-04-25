@@ -22,9 +22,8 @@ fetch(`https://api.exchangerate.host/latest?base=${valuteID}&symbols=${valuteID2
             }
         })
         exc1.innerHTML = `1 ${valuteID} = ` + data.rates[valuteID2] + ` ${valuteID2}`
-        exc2.innerHTML = `1 ${valuteID2} = ` + data.rates[valuteID] + ` ${valuteID}`
     })
-fetch(`https://api.exchangerate.host/latest?base=${valuteID}&symbols=${valuteID2}`)
+fetch(`https://api.exchangerate.host/latest?base=${valuteID2}&symbols=${valuteID}`)
     .then(res => res.json())
     .then(data => exc2.innerHTML = `1 ${valuteID2} = ` + data.rates[valuteID] + ` ${valuteID}`)
 
